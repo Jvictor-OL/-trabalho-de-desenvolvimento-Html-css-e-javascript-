@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalusConecta - Consultoria e Vendas de Planos de Saúde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="desine/styler.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo da Empresa">
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-label="Menu principal">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="main-nav">
+            <ul id="menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#planos">Planos de Saúde</a></li>
+                <li><a href="#simulacao">Simule Seu Plano</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Cuidar da sua saúde é nosso compromisso</h1>
+            <p>Encontre o plano de saúde ideal para você, sua família ou sua empresa.</p>
+            <a href="#simulacao" class="cta-button">Faça uma Simulação</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma empresa especializada em vendas e consultoria de planos de saúde, com anos de experiência no
+            mercado e parcerias com as melhores operadoras. Nosso objetivo é fornecer aos nossos clientes um atendimento
+            personalizado, ajudando a escolher o plano ideal com base nas suas necessidades de saúde e bem-estar.</p>
+        <p><strong>Compromisso com você:</strong> Estamos ao seu lado para garantir que você tenha acesso aos melhores
+            planos de saúde e ao suporte completo na escolha e contratação do plano.</p>
+    </section>
+
+<section id="planos" class="planos-de-saude">
+    <h2>Nossos Planos de Saúde</h2>
+    <div class="planos-container">
+        <div class="plano">
+            <h3>Plano Individual</h3>
+            <p>Cobertura completa para você, com acesso a toda nossa rede credenciada.</p>
+            <a href="#simulacao" class="cta-plano">Simular valores</a>
+        </div>
+        
+        <div class="plano popular">
+            <h3>Plano Familiar</h3>
+            <p>Proteção para toda sua família com condições especiais e economia.</p>
+            <a href="#simulacao" class="cta-plano">Simular valores</a>
+        </div>
+        
+        <div class="plano">
+            <h3>Plano Empresarial</h3>
+            <p>Soluções personalizadas para empresas de todos os portes.</p>
+            <a href="#simulacao" class="cta-plano">Simular valores</a>
+        </div>
+        
+        <div class="plano mei">
+            <h3>Plano MEI</h3>
+            <p>Planos acessíveis para microempreendedores, com carência reduzida.</p>
+            <a href="#simulacao" class="cta-plano">Simular valores</a>
+        </div>
+    </div>
+</section>
+
+    <section id="simulacao" class="simulacao">
+        <h2>Simule Seu Plano</h2>
+        <p>Preencha o formulário abaixo e veja as opções de planos de saúde ideais para você.</p>
+        <form action="comparador.html" method="get">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tipo-plano">Tipo de Plano</label>
+            <select id="tipo-plano" name="tipo-plano">
+                <option value="individual">Individual</option>
+                <option value="familiar">Familiar</option>
+                <option value="empresarial">Empresarial</option>
+                <option value="mei">MEI / Autônomo</option>
+            </select>
+
+            <button type="submit" class="cta-button">Simular Plano</button>
+        </form>
+    </section>
+
+    <section id="depoimentos" class="depoimentos">
+        <h2>Depoimentos <i class="fas fa-quote-right"></i></h2>
+        <div class="depoimentos-container">
+            <div class="depoimento">
+                <p>"Tive uma experiência excelente! O site é fácil de usar, e consegui comparar os planos rapidamente.
+                    Escolhi o que mais se encaixava no meu orçamento e já comecei a usar os benefícios. Super recomendo
+                    para quem quer praticidade e segurança."</p>
+                <span class="depoimento-author">
+                    <i class="fas fa-user"></i> João Silva
+                </span>
+            </div>
+            <div class="depoimento">
+                <p>"Não conhecia muitas opções de plano, mas com a simulação consegui entender tudo e escolher com
+                    confiança. O atendimento foi claro, sem enrolação, e o plano atendeu todas as minhas necessidades
+                    médicas. Foi a melhor escolha que fiz!"</p>
+                <span class="depoimento-author">
+                    <i class="fas fa-user"></i> Maria Oliveira
+                </span>
+            </div>
+            <div class="depoimento">
+                <p>"Fiquei impressionado com a agilidade e o cuidado no atendimento. Em poucos minutos consegui simular
+                    meu plano ideal e fui atendido por um consultor super atencioso. Hoje minha família está protegida e
+                    pagando um preço justo."</p>
+                <span class="depoimento-author">
+                    <i class="fas fa-user"></i> Andre Lima
+                </span>
+            </div>
+        </div>
+        <button class="carrossel-btn prev" aria-label="Depoimento anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carrossel-btn next" aria-label="Próximo depoimento">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </section>
+
+    <section id="faq" class="faq-container">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-item">
+            <button class="faq-question">Qual é o período de carência dos planos?</button>
+            <div class="faq-answer">O período de carência pode variar de 24 horas até 180 dias, dependendo do plano
+                escolhido.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Quais são os documentos necessários para adesão?</button>
+            <div class="faq-answer">Documentos como RG, CPF e comprovante de residência são essenciais para adesão.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Como funciona a migração de um plano para outro?</button>
+            <div class="faq-answer">A migração pode ser feita sem carência se o plano anterior estiver ativo.</div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações ou para tirar dúvidas sobre os planos de saúde.</p>
+        <ul>
+            <li>Email: SalusConecta2025@gmail.com</li>
+            <li>Telefone: (11) 1234-5678</li>
+            <li>WhatsApp: (11) 98765-4321</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SalusConecta. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="JAV-SRC/Scrypt.js"></script>
+</body>
+
+</html>
